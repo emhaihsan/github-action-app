@@ -1,4 +1,4 @@
-from src.math_operations import add, subtract, multiply_two, divide, power, modulo
+from src.math_operations import add, subtract, multiply, divide, power, modulo
 
 def test_add():
     assert add(1, 2) == 3
@@ -10,10 +10,10 @@ def test_subtract():
     assert subtract(2, 5) == -3
     assert subtract(0, -4) == -4
 
-def test_multiply_two():
-    assert multiply_two(3) == 6
-    assert multiply_two(-1) == -2
-    assert multiply_two(0) == 0
+def test_multiply():
+    assert multiply(2, 3) == 6
+    assert multiply(5, 2) == 10
+    assert multiply(0, 0) == 0
 
 def test_divide():
     assert divide(6, 2) == 3
